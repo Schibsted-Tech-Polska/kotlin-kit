@@ -1,3 +1,5 @@
+package pl.schibsted.kotlinkit.extensions
+
 import android.content.Context
 import android.util.Log
 import android.view.View

@@ -1,3 +1,5 @@
+package pl.schibsted.kotlinkit.extensions
+
 import android.view.View
 
 /**

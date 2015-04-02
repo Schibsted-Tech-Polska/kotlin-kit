@@ -1,3 +1,5 @@
+package pl.schibsted.kotlinkit.extensions.joda
+
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 

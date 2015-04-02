@@ -1,27 +1,27 @@
+package pl.schibsted.kotlinkit.extensions
+
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.ActionBarActivity
 
 /**
- * Created by Jacek Kwiecień on 01.04.15.
+ * Start [Activity] with optional extras.
+ * @author Damian Petla
+ * @param extras optional extras provided to started activity
  */
-
-fun <T : Activity> Activity.startActivity(activityToStart: Class<T>) {
-    val intent = Intent(this, activityToStart)
-    startActivity(intent)
-}
-
-fun <T : Activity> Activity.startActivityForResult(activityToStart: Class<T>, requestCode: Int) {
-    val intent = Intent(this, activityToStart)
-    startActivityForResult(intent, requestCode)
-}
-
-fun <T : Activity> Activity.startActivity(activityToStart: Class<T>, extras: Bundle) {
-    val intent = Intent(this, activityToStart)
+inline fun Activity.startActivity<reified T : Activity>(extras: Bundle? = null) {
+    val intent = Intent(this, javaClass<T>())
     startActivity(intent, extras)
 }
 
-fun <T : Activity> Activity.startActivityForResult(activityToStart: Class<T>, extras: Bundle, requestCode: Int) {
-    val intent = Intent(this, activityToStart)
+/**
+ * Start [Activity] for result with optional extras.
+ * @author Damian Petla
+ * @param requestCode code returned [Activity.onActivityResult]
+ * @param extras optional extras provided to started activity
+ */
+inline fun Activity.startActivityForResult<reified T : Activity>(requestCode: Int, extras: Bundle? = null) {
+    val intent = Intent(this, javaClass<T>())
     startActivityForResult(intent, requestCode, extras)
 }
