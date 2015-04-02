@@ -10,7 +10,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
     }
 
     sourceSets {
@@ -29,5 +29,4 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'joda-time:joda-time:2.1'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.jakewharton:butterknife:6.0.0'
 }
