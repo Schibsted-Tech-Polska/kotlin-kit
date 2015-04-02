@@ -1,6 +1,5 @@
-package se.alltomstockholm.extensions
+package pl.schibsted.kotlinkit.extensions
 
-import android.R
 import android.content.Context
 import android.util.Log
 import android.view.View

@@ -1,4 +1,4 @@
-package se.alltomstockholm.extensions
+package pl.schibsted.kotlinkit.extensions
 
 import android.app.Activity
 import android.content.Intent

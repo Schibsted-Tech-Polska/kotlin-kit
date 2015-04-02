@@ -1,4 +1,4 @@
-package se.klart.extensions
+package pl.schibsted.kotlinkit.extensions
 
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
