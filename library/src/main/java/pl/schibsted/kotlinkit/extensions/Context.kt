@@ -1,6 +1,3 @@
-package se.alltomstockholm.extensions
-
-import android.R
 import android.content.Context
 import android.util.Log
 import android.view.View

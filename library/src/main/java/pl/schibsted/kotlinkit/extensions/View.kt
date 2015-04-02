@@ -1,5 +1,3 @@
-package se.alltomstockholm.extensions
-
 import android.view.View
 
 /**

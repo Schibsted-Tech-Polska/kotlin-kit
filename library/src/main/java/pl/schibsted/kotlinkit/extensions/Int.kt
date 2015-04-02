@@ -1,5 +1,3 @@
-package se.klart.extensions
-
 import android.content.Context
 
 /**
