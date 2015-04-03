@@ -1,4 +1,4 @@
-# kotlin-kit
+# Kotlin Kit
 Kotlin for android essentials
 
 #Setup
