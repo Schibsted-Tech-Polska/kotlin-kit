@@ -10,7 +10,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0.2"
+        versionName "1.0"
     }
 
     sourceSets {
@@ -26,11 +26,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-<<<<<<< HEAD
-
-=======
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
->>>>>>> 2e90d99... splited modules
-    compile project(':core')
-    compile project(':jodatime')
+    compile 'joda-time:joda-time:2.1'
 }
