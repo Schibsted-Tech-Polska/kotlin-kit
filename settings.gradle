@@ -1,1 +1,1 @@
-include ':sample', ':library', ':core', ':jodatime'
+include ':sample', ':core', ':jodatime'

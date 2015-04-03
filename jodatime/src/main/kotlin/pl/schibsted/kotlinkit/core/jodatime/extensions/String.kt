@@ -1,4 +1,4 @@
-package pl.schibsted.core.extensions.joda
+package pl.schibsted.core.jodatime.extensions
 
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
