@@ -14,7 +14,7 @@ repositories {
 
 ```
 dependencies {
-    compile 'com.github.Schibsted-Tech-Polska:kotlin-kit:1.0.9@jar'
+    compile 'com.github.Schibsted-Tech-Polska:kotlin-kit:1.0.10@jar'
 }
 ```
 
@@ -24,13 +24,13 @@ dependencies {
 Core methods only, no other 3rd party libraries included
 ```
 dependencies {
-    compile 'com.github.Schibsted-Tech-Polska.kotlin-kit:core:1.0.9'
+    compile 'com.github.Schibsted-Tech-Polska.kotlin-kit:core:1.0.10'
 }
 ```
 
 [JodaTime](http://www.joda.org/joda-time/) extension
 ```
 dependencies {
-    compile 'com.github.Schibsted-Tech-Polska.kotlin-kit:jodatime:1.0.9'
+    compile 'com.github.Schibsted-Tech-Polska.kotlin-kit:jodatime:1.0.10'
 }
 ```
