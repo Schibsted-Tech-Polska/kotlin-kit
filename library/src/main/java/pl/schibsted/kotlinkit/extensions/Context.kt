@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import android.widget.Toast
 
 /**
  * Created by Jacek Kwiecień on 25.03.15.
@@ -30,4 +31,40 @@ fun Context.showKeyboard(caller: View) {
             imm.showSoftInput(caller, InputMethodManager.SHOW_IMPLICIT)
         }
     }, 100)
+}
+
+/**
+ * Show short toast message.
+ * @author Damian Petla
+ * @param message message to be displayed
+ */
+fun Context.showShortToast(message: String) {
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+}
+
+/**
+ * Show short toast message.
+ * @author Damian Petla
+ * @param message resource identifier of the message
+ */
+fun Context.showShortToast(message: Int) {
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+}
+
+/**
+ * Show long toast message.
+ * @author Damian Petla
+ * @param message message to be displayed
+ */
+fun Context.showLongToast(message: String) {
+    Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+}
+
+/**
+ * Show long toast message.
+ * @author Damian Petla
+ * @param message resource identifier of the message
+ */
+fun Context.showLongToast(message: Int) {
+    Toast.makeText(this, message, Toast.LENGTH_LONG).show()
 }
