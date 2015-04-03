@@ -10,16 +10,7 @@ repositories {
 }
 ```    
 
-**If you wan't the full package here is the dependency:**
-
-```
-dependencies {
-    compile 'com.github.Schibsted-Tech-Polska:kotlin-kit:1.0.10@jar'
-}
-```
-
-**There are also split modules available:**
-
+**There are couple modules available:**
 
 Core methods only, no other 3rd party libraries included
 ```
