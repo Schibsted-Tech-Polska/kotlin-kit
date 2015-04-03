@@ -1,1 +1,1 @@
-include ':sample', ':library'
+include ':sample', ':library', ':kotlinkit-core', ':kotlinkit-jodatime'

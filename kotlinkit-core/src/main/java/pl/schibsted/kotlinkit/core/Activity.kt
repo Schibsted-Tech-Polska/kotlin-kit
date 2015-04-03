@@ -1,9 +1,8 @@
-package pl.schibsted.kotlinkit.extensions
+package pl.schibsted.core.extensions
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.ActionBarActivity
 
 /**
  * Start [Activity] with optional extras.

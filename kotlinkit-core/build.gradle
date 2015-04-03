@@ -10,13 +10,8 @@ android {
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
-        versionName "1.0.2"
+        versionName "1.0"
     }
-
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
-    }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -27,6 +22,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile project(':kotlinkit-core')
-    compile project(':kotlinkit-jodatime')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }

@@ -1,4 +1,4 @@
-package pl.schibsted.kotlinkit.extensions
+package pl.schibsted.core.extensions
 
 import android.content.Context
 import android.util.Log

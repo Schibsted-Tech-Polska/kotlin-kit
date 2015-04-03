@@ -1,4 +1,4 @@
-package pl.schibsted.kotlinkit.extensions.joda
+package pl.schibsted.core.extensions.joda
 
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
@@ -7,7 +7,7 @@ import org.joda.time.format.DateTimeFormat
  * Created by Jacek Kwiecień on 04.03.15.
  */
 
-fun DateTime.print(pattern: String): String {
+fun String.parseDate(pattern: String): DateTime {
     var df = DateTimeFormat.forPattern(pattern)
-    return df.print(this)
+    return df.parseDateTime(this)
 }
