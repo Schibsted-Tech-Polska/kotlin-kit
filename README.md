@@ -8,6 +8,6 @@ repositories {
 }
     
 dependencies {
-    compile 'com.github.Schibsted-Tech-Polska:kotlin-kit:1.0.3'
+    compile 'com.github.Schibsted-Tech-Polska:kotlin-kit:1.0.2'
 }
 ```
