@@ -87,6 +87,6 @@ fun View.isInvisible(): Boolean {
  * Checks wheter view is visible
  * @author Jacek Kwiecień
  */
-fun View.isGOne(): Boolean {
+fun View.isGone(): Boolean {
     return this.getVisibility() == View.GONE;
 }
