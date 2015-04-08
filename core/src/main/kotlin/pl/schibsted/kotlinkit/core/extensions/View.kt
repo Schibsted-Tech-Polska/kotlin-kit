@@ -8,14 +8,26 @@ import pl.schibsted.kotlinkit.core.hasLollipop
  * Created by Jacek Kwiecień on 30.03.15.
  */
 
+/**
+ * Sets visibility to VISIBLE
+ * @author Jacek Kwiecień
+ */
 fun View.visible() {
     this.setVisibility(View.VISIBLE)
 }
 
+/**
+ * Sets visibility to GONE
+ * @author Jacek Kwiecień
+ */
 fun View.gone() {
     this.setVisibility(View.GONE)
 }
 
+/**
+ * Sets visibility to INVISIBLE
+ * @author Jacek Kwiecień
+ */
 fun View.invisible() {
     this.setVisibility(View.INVISIBLE)
 }
@@ -53,4 +65,28 @@ fun View.getEleveationCompat(): Float {
     } else {
         0f
     }
+}
+
+/**
+ * Checks wheter view is visible
+ * @author Jacek Kwiecień
+ */
+fun View.isVisible(): Boolean {
+    return this.getVisibility() == View.VISIBLE;
+}
+
+/**
+ * Checks wheter view is visible
+ * @author Jacek Kwiecień
+ */
+fun View.isInvisible(): Boolean {
+    return this.getVisibility() == View.INVISIBLE;
+}
+
+/**
+ * Checks wheter view is visible
+ * @author Jacek Kwiecień
+ */
+fun View.isGOne(): Boolean {
+    return this.getVisibility() == View.GONE;
 }
