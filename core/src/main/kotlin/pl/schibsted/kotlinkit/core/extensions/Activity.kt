@@ -2,16 +2,16 @@ package pl.schibsted.core.extensions
 
 import android.app.Activity
 import android.content.Intent
-import pl.schibsted.kotlinkit.core.extensions.writeExtras
+import android.os.Bundle
 
 /**
  * Start [Activity] with optional extras.
  * @author Damian Petla
  * @param extras optional extras provided to started activity
  */
-inline fun Activity.startActivity<reified T : Activity>(params: Array<out Pair<String, Any>>) {
+inline fun Activity.startActivity<reified T : Activity>(extras: Bundle? = null) {
     val intent = Intent(this, javaClass<T>())
-    intent.writeExtras(params)
+    intent.putExtras(extras)
     startActivity(intent)
 }
 
@@ -21,8 +21,8 @@ inline fun Activity.startActivity<reified T : Activity>(params: Array<out Pair<S
  * @param requestCode code returned [Activity.onActivityResult]
  * @param extras optional extras provided to started activity
  */
-inline fun Activity.startActivityForResult<reified T : Activity>(requestCode: Int, params: Array<out Pair<String, Any>>) {
+inline fun Activity.startActivityForResult<reified T : Activity>(requestCode: Int, extras: Bundle? = null) {
     val intent = Intent(this, javaClass<T>())
-    intent.writeExtras(params)
+    intent.putExtras(extras)
     startActivityForResult(intent, requestCode)
 }
