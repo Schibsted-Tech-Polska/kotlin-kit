@@ -14,7 +14,7 @@ import android.support.v4.app.Fragment
  * @author Jacek Kwiecień
  * @param extras optional extras provided to started activity
  */
-inline fun Fragment.startActivity<reified T : Activity>(extras: Bundle? = null) {
+inline fun Fragment.launchActivity<reified T : Activity>(extras: Bundle? = null) {
     val intent = Intent(getActivity(), javaClass<T>())
     intent.putExtras(extras)
     startActivity(intent)
@@ -26,7 +26,7 @@ inline fun Fragment.startActivity<reified T : Activity>(extras: Bundle? = null) 
  * @param requestCode code returned [Activity.onActivityResult]
  * @param extras optional extras provided to started activity
  */
-inline fun Fragment.startActivityForResult<reified T : Activity>(requestCode: Int, extras: Bundle? = null) {
+inline fun Fragment.launchActivityForResult<reified T : Activity>(requestCode: Int, extras: Bundle? = null) {
     val intent = Intent(getActivity(), javaClass<T>())
     if (extras != null) intent.putExtras(extras)
     startActivityForResult(intent, requestCode)
@@ -37,7 +37,7 @@ inline fun Fragment.startActivityForResult<reified T : Activity>(requestCode: In
  * @author Jacek Kwiecień
  * @param extras optional extras provided to started activity
  */
-inline fun android.app.Fragment.startActivity<reified T : Activity>(extras: Bundle? = null) {
+inline fun android.app.Fragment.launchActivity<reified T : Activity>(extras: Bundle? = null) {
     val intent = Intent(getActivity(), javaClass<T>())
     if (extras != null) intent.putExtras(extras)
     startActivity(intent)
@@ -49,7 +49,7 @@ inline fun android.app.Fragment.startActivity<reified T : Activity>(extras: Bund
  * @param requestCode code returned [Activity.onActivityResult]
  * @param extras optional extras provided to started activity
  */
-inline fun android.app.Fragment.startActivityForResult<reified T : Activity>(requestCode: Int, extras: Bundle? = null) {
+inline fun android.app.Fragment.launchActivityForResult<reified T : Activity>(requestCode: Int, extras: Bundle? = null) {
     val intent = Intent(getActivity(), javaClass<T>())
     if (extras != null) intent.putExtras(extras)
     startActivityForResult(intent, requestCode)

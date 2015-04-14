@@ -26,3 +26,13 @@ fun Context.showKeyboard(caller: View) {
         imm.showSoftInput(caller, InputMethodManager.SHOW_IMPLICIT)
     }, 100)
 }
+
+/**
+ * Creates [Pair] to use with Lolipop [Activity] transitions
+ * @author Jacek Kwiecień
+ * @param view transitioned view
+ * @param key unique transition key
+ */
+fun Context.makeTransitionPair(view: View, key: String): android.support.v4.util.Pair<View, String> {
+    return android.support.v4.util.Pair(view, key)
+}
