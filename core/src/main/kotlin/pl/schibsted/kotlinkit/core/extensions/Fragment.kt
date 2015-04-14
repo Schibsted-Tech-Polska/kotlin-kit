@@ -28,7 +28,7 @@ inline fun Fragment.startActivity<reified T : Activity>(extras: Bundle? = null) 
  */
 inline fun Fragment.startActivityForResult<reified T : Activity>(requestCode: Int, extras: Bundle? = null) {
     val intent = Intent(getActivity(), javaClass<T>())
-    intent.putExtras(extras)
+    if (extras != null) intent.putExtras(extras)
     startActivityForResult(intent, requestCode)
 }
 
@@ -39,7 +39,7 @@ inline fun Fragment.startActivityForResult<reified T : Activity>(requestCode: In
  */
 inline fun android.app.Fragment.startActivity<reified T : Activity>(extras: Bundle? = null) {
     val intent = Intent(getActivity(), javaClass<T>())
-    intent.putExtras(extras)
+    if (extras != null) intent.putExtras(extras)
     startActivity(intent)
 }
 
@@ -51,6 +51,6 @@ inline fun android.app.Fragment.startActivity<reified T : Activity>(extras: Bund
  */
 inline fun android.app.Fragment.startActivityForResult<reified T : Activity>(requestCode: Int, extras: Bundle? = null) {
     val intent = Intent(getActivity(), javaClass<T>())
-    intent.putExtras(extras)
+    if (extras != null) intent.putExtras(extras)
     startActivityForResult(intent, requestCode)
 }

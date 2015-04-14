@@ -11,7 +11,7 @@ import android.os.Bundle
  */
 inline fun Activity.startActivity<reified T : Activity>(extras: Bundle? = null) {
     val intent = Intent(this, javaClass<T>())
-    intent.putExtras(extras)
+    if (extras != null) intent.putExtras(extras)
     startActivity(intent)
 }
 
@@ -23,6 +23,6 @@ inline fun Activity.startActivity<reified T : Activity>(extras: Bundle? = null) 
  */
 inline fun Activity.startActivityForResult<reified T : Activity>(requestCode: Int, extras: Bundle? = null) {
     val intent = Intent(this, javaClass<T>())
-    intent.putExtras(extras)
+    if (extras != null) intent.putExtras(extras)
     startActivityForResult(intent, requestCode)
 }
